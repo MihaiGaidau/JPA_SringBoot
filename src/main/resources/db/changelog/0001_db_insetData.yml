@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: mihai
+      changes:
+        - insert:
+            tableName: USERS
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: name
+                  value: mihai
+              - column:
+                  name: email
+                  value: example@email.com
+              - column:
+                  name: disabled
+                  value: true
+        - insert:
+            tableName: USERS
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: name
+                  value: gabi
+              - column:
+                  name: email
+                  value: gabi@mail.com
+              - column:
+                  name: disabled
+                  value: false
+

@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: mihai
+      changes:
+        createTable:
+          tableName: USERS
+          columns:
+            - column:
+                name: id
+                type: int
+                autoIncrement: true
+                constraints:
+                  primaryKey: true
+                  nullable: false
+
+            - column:
+                name: name
+                type: varchar(50)
+                constraints:
+                  nullable: false
+            - column:
+                name: email
+                type: varchar(50)
+
+            - column:
+                name: disabled
+                type: boolean
+                constraints:
+                  nullable: false
